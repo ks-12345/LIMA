@@ -1,1 +1,0 @@
-Livro de HTML — versão em capítulos. Abra index.html para navegar entre os tópicos.

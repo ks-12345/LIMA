@@ -1,0 +1,140 @@
+:root {
+    /* Cores primárias da paleta */
+    --amarelo: #ffcf01;
+    --verde_claro: #b3bd35;
+    --verde_medio: #00873e;
+    --verde_escuro: #005430;
+    --vermelho: #ce202f;
+    --branco: #ffffff;
+
+}
+
+
+.tilt-prism {
+  font-family: "Tilt Prism", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style:normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tilt Prism", sans-serif; /* Usando Arial para simular o padrão do navegador */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fundo cinza claro fora da área principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Largura máxima para o conteúdo principal, simulando a área de visualização */
+
+.menu-navegacao,
+.container-principal {
+    width: 100%;
+    max-width: 960px; /* Largura comum para layouts centrados */
+}
+
+/* --- Cabeçalho Principal (A faixa azul/roxa grande) --- */
+.cabecalho-principal {
+    background-image: url(folhas_verde.jpg); /* Cor azul/roxa da imagem */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.titulo-principal {
+    font-size: 2.2em;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo {
+    font-size: 1em;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* --- Menu de Navegação (A faixa azul mais fina) --- */
+.menu-navegacao {
+    background-color: var(--verde_escuro); /* Um tom de azul ligeiramente mais escuro que o cabeçalho */
+    padding: 20px 100%;
+    display: flex;
+    align-items: end;
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+.menu-navegacao a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.2s;
+}
+
+.menu-navegacao a:hover {
+    background-color:var(--vermelho);
+    border-radius: 3px;
+}
+
+/* --- Container Principal (Onde fica o conteúdo branco/azul claro) --- */
+.container-principal {
+    background-color: white; /* Fundo do conteúdo principal */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o container */
+    border-radius: 0 0 5px 5px; /* Bordas arredondadas na parte inferior */
+    margin-bottom: 30px; /* Espaço para o final da página */
+}
+
+/* --- Estilização do Conteúdo (Texto e Títulos) --- */
+.conteudo-projeto {
+    padding: 20px;
+    border: 1px solid #cceeff; /* Borda azul clara em volta do texto */
+    background-color: #f7fcff; /* Fundo muito levemente azul para o conteúdo */
+}
+
+.conteudo-projeto h2 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid var(--verde_medio); /* Linha sutil sob o H2 */
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.conteudo-projeto h3.destaque-subtitulo {
+    display: inline-block;
+    background-color: #d1e7ff; /* Fundo azul claro para o H3 */
+    color: #0056b3;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.conteudo-projeto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: justify;
+}
+
+.conteudo-projeto strong {
+    color: var(--verde_medio); /* Destacar em azul */
+}
+
+.detalhes-adicionais {
+    font-size: 0.9em;
+    margin: 5px 0;
+    padding-left: 10px;
+    border-left: 3px solid var(--verde_medio); /* Barra lateral de cor para os detalhes */
+    background-color: #f0f8ff; /* Fundo sutil para os detalhes */
+}

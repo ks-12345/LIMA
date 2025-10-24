@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: "Tilt Prism", sans-serif; /* Usando Arial para simular o padrão do navegador */
+    font-family: sans-serif; /* Usando Arial para simular o padrão do navegador */
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; /* Fundo cinza claro fora da área principal */
@@ -43,7 +43,7 @@ body {
 
 /* --- Cabeçalho Principal (A faixa azul/roxa grande) --- */
 .cabecalho-principal {
-    background-image: url(folhas_verde.jpg); /* Cor azul/roxa da imagem */
+    background-image: url(pexels-aditya-aiyar-615049-1407305.jpg); /* Cor azul/roxa da imagem */
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -52,6 +52,7 @@ body {
 }
 
 .titulo-principal {
+    font-family: "Tilt Prism", sans-serif;
     font-size: 2.2em;
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -112,7 +113,7 @@ body {
 .conteudo-projeto h3.destaque-subtitulo {
     display: inline-block;
     background-color: #d1e7ff; /* Fundo azul claro para o H3 */
-    color: #0056b3;
+    color: var(--verde_escuro);
     padding: 5px 10px;
     border-radius: 3px;
     font-size: 1.2em;
@@ -137,4 +138,19 @@ body {
     padding-left: 10px;
     border-left: 3px solid var(--verde_medio); /* Barra lateral de cor para os detalhes */
     background-color: #f0f8ff; /* Fundo sutil para os detalhes */
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#guarana{
+    display: flex;
+    align-items: end;
+    margin: auto 1000px ;
+    max-width: 300px;
+    height: 300px;
 }

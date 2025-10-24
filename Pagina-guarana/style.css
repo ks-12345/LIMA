@@ -32,8 +32,24 @@ body {
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
-
 /* Largura máxima para o conteúdo principal, simulando a área de visualização */
+
+body::before {
+    content: ""; /* Obrigatório para pseudo-elementos */
+    background-image: url('guarana-antarctica-d156c3a132b021b099c7.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Ajuste este valor (de 0.0 a 1.0) para controlar a transparência */
+    z-index: -1; /* Coloca a imagem por trás do conteúdo */
+}
+
+
+
 
 .menu-navegacao,
 .container-principal {
@@ -43,7 +59,7 @@ body {
 
 /* --- Cabeçalho Principal (A faixa azul/roxa grande) --- */
 .cabecalho-principal {
-    background-image: url(pexels-aditya-aiyar-615049-1407305.jpg); /* Cor azul/roxa da imagem */
+    background-image: url(folhas_verde.jpg); /* Cor azul/roxa da imagem */
     color: white;
     padding: 40px 20px;
     text-align: center;

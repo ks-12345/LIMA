@@ -19,6 +19,7 @@
     "XROT" 0,
     "YROT" 0;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -41,7 +42,7 @@ body {
 }
 
 .cabecalho-principal {
-    background-image: url('folhas_verde.jpg'); 
+    background-image: url('arranjo-de-folhas-de-palmeira-verde-3d.jpg'); 
     color: white;
     padding: 90px 0px;
     text-align: center;
@@ -66,8 +67,8 @@ body {
 .menu-navegacao {
     background-color: var(--verde_escuro); 
     padding: 20px 100%;
-    display: flex;
-    align-items: end;
+    display:flex;
+    align-items: center;
     gap: 20px; /* Espaçamento entre os links */
 }
 

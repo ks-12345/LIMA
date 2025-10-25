@@ -27,29 +27,12 @@ body {
     font-family: sans-serif; /* Usando Arial para simular o padrão do navegador */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Fundo cinza claro fora da área principal */
+    background-color: var(--verde_medio); /* Fundo cinza claro fora da área principal */
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
 /* Largura máxima para o conteúdo principal, simulando a área de visualização */
-
-body::before {
-    content: ""; /* Obrigatório para pseudo-elementos */
-    background-image: url('guarana-antarctica-d156c3a132b021b099c7.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5; /* Ajuste este valor (de 0.0 a 1.0) para controlar a transparência */
-    z-index: -1; /* Coloca a imagem por trás do conteúdo */
-}
-
-
-
 
 .menu-navegacao,
 .container-principal {
@@ -57,11 +40,10 @@ body::before {
     max-width: 960px; /* Largura comum para layouts centrados */
 }
 
-/* --- Cabeçalho Principal (A faixa azul/roxa grande) --- */
 .cabecalho-principal {
-    background-image: url(folhas_verde.jpg); /* Cor azul/roxa da imagem */
+    background-image: url('folhas_verde.jpg'); 
     color: white;
-    padding: 40px 20px;
+    padding: 90px 0px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -80,9 +62,9 @@ body::before {
     opacity: 0.9;
 }
 
-/* --- Menu de Navegação (A faixa azul mais fina) --- */
+
 .menu-navegacao {
-    background-color: var(--verde_escuro); /* Um tom de azul ligeiramente mais escuro que o cabeçalho */
+    background-color: var(--verde_escuro); 
     padding: 20px 100%;
     display: flex;
     align-items: end;
@@ -163,10 +145,10 @@ body::before {
 }
 
 
-#guarana{
+#galera{
     display: flex;
     align-items: end;
-    margin: auto 1000px ;
-    max-width: 300px;
-    height: 300px;
+    margin: auto;
+    max-width: 700px;
+    height: auto;
 }
